@@ -21,12 +21,17 @@
     </form:select>
     <br><br>
     Salary <form:input path="salary"/>
+    <form:errors path="salary"/>
     <br><br>
     Which car do you want?
     <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
     <br><br>
     Foreign Language(s)
     <form:checkboxes path="languages" items="${employee.languageList}"/>
+    <br><br>
+    Phone number <form:input path="phoneNumber"/>
+    <form:errors path="phoneNumber"/>
+
 
 
     <br><br>
