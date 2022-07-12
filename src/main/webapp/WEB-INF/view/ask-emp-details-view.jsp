@@ -9,9 +9,12 @@
 <br>
 <br>
 <form:form action="showDetails" modelAttribute="employee">
+
     Name <form:input path="name"/>
+    <form:errors path="name"/>
     <br><br>
     Surname <form:input path="surname"/>
+    <form:errors path="surname"/>
     <br><br>
     Department <form:select path="department">
     <form:options items="${employee.departments}"/>
